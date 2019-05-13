@@ -234,6 +234,9 @@ func (t *trace) finishedOne() {
 		if t.priority != nil {
 			t.root.Metrics[keySamplingPriority] = *t.priority
 		}
+		if tr.hostname != "" {
+			t.root.Meta[keyHostname] = tr.hostname
+		}
 		tr.pushTrace(t.spans)
 	}
 	t.spans = nil

@@ -272,4 +272,5 @@ const (
 	keySamplingPriority     = "_sampling_priority_v1"
 	keySamplingPriorityRate = "_sampling_priority_rate_v1"
 	keyOrigin               = "_dd.origin"
+	keyHostname             = "_dd.hostname"
 )
